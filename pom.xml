@@ -12,6 +12,7 @@
     <!-- 指定模块, 指定对应的子项目 -->
     <modules>
         <module>client</module>
+        <module>master</module>
     </modules>
 
     <properties>
@@ -26,6 +27,8 @@
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
         <!-- 指定JDK版本 -->
         <java-jdk.version>1.8</java-jdk.version>
+        <mybatis-plus.version>3.0.6</mybatis-plus.version>
+        <mysql-connector-java.version>8.0.32</mysql-connector-java.version>
     </properties>
 
     <!-- dependencyManagement: 对所依赖jar包进行版本管理的管理器,声明依赖，并不实现引入.
@@ -59,6 +62,22 @@
                 <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <scope>runtime</scope>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.8.16</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
