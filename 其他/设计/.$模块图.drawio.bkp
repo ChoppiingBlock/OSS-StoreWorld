@@ -1,0 +1,91 @@
+<mxfile host="Electron" modified="2024-01-22T04:56:12.436Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="NLJ0wh3tkN2kq4snbnef" version="22.1.18" type="device">
+  <diagram name="第 1 页" id="KoqkZVV4o27iIjhHuJwe">
+    <mxGraphModel dx="1221" dy="717" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-1" target="MwknkaGHGHBi1cdsV5-i-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-1" target="MwknkaGHGHBi1cdsV5-i-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-1" target="MwknkaGHGHBi1cdsV5-i-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-1" target="MwknkaGHGHBi1cdsV5-i-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-1" value="模块图" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="514" y="113" width="166" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-2" value="愿景：公司分布式文件管理系统中间件&lt;br&gt;功能：&lt;br&gt;1.运行框可视化&lt;br&gt;2.多账户&lt;br&gt;3.可调节分块系统&lt;br&gt;4.高可靠，&lt;br&gt;5.高容灾&lt;br&gt;6.断电重传&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1025" y="65" width="284" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-3" target="MwknkaGHGHBi1cdsV5-i-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-3" target="MwknkaGHGHBi1cdsV5-i-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-3" value="client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="261" y="286" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-4" value="master" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="286" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-5" target="MwknkaGHGHBi1cdsV5-i-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-5" target="MwknkaGHGHBi1cdsV5-i-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-5" target="MwknkaGHGHBi1cdsV5-i-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-5" value="cal server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="642" y="286" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-6" target="MwknkaGHGHBi1cdsV5-i-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MwknkaGHGHBi1cdsV5-i-6" target="MwknkaGHGHBi1cdsV5-i-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-6" value="storeserver" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="841" y="286" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-11" value="界面" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="416" width="54" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-12" value="简单的文件api" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="307" y="416" width="54" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-16" value="简单的文件api" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="278" y="593" width="54" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-17" value="简单的文件api" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="288" y="603" width="54" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-18" value="接收，发送文件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="939" y="416" width="54" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-19" value="真正存储文件的机器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="854" y="416" width="54" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-20" value="处理文件给下游" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="762" y="416" width="54" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-21" value="接收/&lt;br&gt;发送&lt;br&gt;文件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="416" width="54" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-22" value="分块&lt;br&gt;/合并&lt;br&gt;/复原" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="595" y="416" width="54" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="MwknkaGHGHBi1cdsV5-i-23" value="维护分块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="416" width="54" height="91" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

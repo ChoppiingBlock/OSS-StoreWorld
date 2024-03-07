@@ -1,0 +1,2 @@
+2024-01-31 14:38:29.199 [main] FATAL org.example.bucketworld.Log4j2Test - fatal
+2024-01-31 14:38:29.204 [main] ERROR org.example.bucketworld.Log4j2Test - error
