@@ -1,7 +1,6 @@
-package org.spring.util;
+package org.spring.tool.ErrorTripUtil;
 
 import java.io.File;
-import java.io.RandomAccessFile;
 
 public class MyAsses {
     public static void ifFilePathExistFile(String filePath) throws MyException {

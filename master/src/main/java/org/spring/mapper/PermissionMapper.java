@@ -1,9 +1,10 @@
 package org.spring.mapper;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import org.apache.ibatis.annotations.Mapper;
-import org.spring.po.User;
-@Mapper
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.spring.po.Permission;
+import org.springframework.stereotype.Repository;
 
-public interface PermissionMapper extends IService<User> {
+@Repository
+
+public interface PermissionMapper extends BaseMapper<Permission> {
 }

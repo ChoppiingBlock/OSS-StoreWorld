@@ -1,4 +1,4 @@
-package org.spring.util;
+package org.spring.tool.ErrorTripUtil;
 
 import lombok.Getter;
 

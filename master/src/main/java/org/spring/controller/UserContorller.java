@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/UserController")
 public class UserContorller {
@@ -22,9 +24,27 @@ public class UserContorller {
     // 登入
     @PostMapping("/Login")
     @ResponseBody
-    public boolean login(@RequestParam("userName") String userName , @RequestParam("password") String password) {
+    public int login(@RequestParam("userName") String userName , @RequestParam("password") String password) throws Exception {
         // 实现登入的方法
-        return !userService.getBaseMapper().selectList(new QueryWrapper<User>().eq("username", userName ).eq("password", password)).isEmpty();
+        System.out.println(userName + password + "  dsioajfoawef");
+        List<User> userList =  userService.getBaseMapper().selectList(new QueryWrapper<User>().eq("username", userName ).eq("password", password));
+        if(userList.isEmpty()) {
+            throw new Exception();
+        }
+        System.out.println(userList.get(0).getId());
+        return userList.get(0).getId();
+    }
+
+
+    //注册
+    @PostMapping("/Register")
+    @ResponseBody
+    public int register(@RequestParam("userName") String userName , @RequestParam("password") String password) throws Exception {
+        // 实现注册的方法
+        if (userService.getBaseMapper().insert(User.builder().username(userName).password(password).build()) <= 0){
+            throw new Exception();
+        }
+        return userService.getOne(new QueryWrapper<User>().eq("userName", userName)).getId();
     }
 
     // 增加文件权限

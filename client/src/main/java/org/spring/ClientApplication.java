@@ -1,32 +1,43 @@
 package org.spring;
 
+import org.spring.config.ApplicationContextProvider;
+import org.spring.flowcontrol.AllStream;
+import org.spring.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.ApplicationContext;
 
-import java.util.Scanner;
+import java.io.IOException;
+
 @EnableFeignClients
-@SpringBootApplication
+@SpringBootApplication()
+
 public class ClientApplication {
+    @Autowired
+    UserService userService;
+
+    @Autowired
+    AllStream allStream;
 
     public static void main(String[] args) {
         SpringApplication.run(ClientApplication.class, args);
-        Scanner scanner = new Scanner(System.in);
-        boolean isRunning = true;
 
-        while (isRunning) {
-            System.out.print("请输入内容（输入'exit'退出）：");
-            String input = scanner.nextLine();
+        // 在新线程中运行 allStream.allStream()
+        ApplicationContext context = ApplicationContextProvider.getContext();
+        AllStream allStreamInstance = context.getBean(AllStream.class);
 
-            if ("exit".equals(input)) {
-                isRunning = false;
-            } else {
-                // 处理输入并返回结果
-                System.out.println("您输入的内容是：" + input);
+        Thread thread = new Thread(() -> {
+            try {
+                allStreamInstance.allStream();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
-        }
-
-        scanner.close();
+        });
+        thread.start();
     }
+
+
 
 }

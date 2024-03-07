@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Data
+@Builder
 @TableName("file_metadata")
 public class FileMetadata implements Serializable {
     /**
@@ -164,5 +166,7 @@ public class FileMetadata implements Serializable {
                 ", rowVersion=" + rowVersion +
                 '}';
     }
+
+
 }
 

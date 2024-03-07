@@ -1,9 +1,9 @@
 package org.spring.mapper;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import org.apache.ibatis.annotations.Mapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.spring.po.FileMetadata;
+import org.springframework.stereotype.Repository;
 
-@Mapper
-public interface FileMetadataMapper extends IService<FileMetadata> {
+@Repository
+public interface FileMetadataMapper extends BaseMapper<FileMetadata> {
 }

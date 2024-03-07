@@ -10,7 +10,11 @@ public class UserService {
     @Autowired
     MasterFeignClient masterFeignClient;
 
-    public boolean login(String userName, String password) {
+    public int login(String userName, String password) {
         return masterFeignClient.login(userName, password);
+    }
+
+    public int register(String userName, String password) {
+        return masterFeignClient.register(userName, password);
     }
 }
