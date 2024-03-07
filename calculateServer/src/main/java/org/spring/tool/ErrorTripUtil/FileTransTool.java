@@ -1,4 +1,4 @@
-package org.spring.util;
+package org.spring.tool.ErrorTripUtil;
 
 
 import cn.hutool.core.util.ArrayUtil;
@@ -14,16 +14,16 @@ import java.util.Date;
 //io工具，网络输入流可以直接保存进入本地
 public class FileTransTool {
 
+
+
     //网络输入流可以直接保存进入本地
 
     //合并超大本地文件，进入第三个文件路径
     public  void mergeFiles(String fileAPath, String fileBPath, String mergedFilePath , int chunkSize) throws Exception {
 
-
         String currentTime = new SimpleDateFormat("MM-dd HH:mm:ss").format(new Date()).replace(" ","").replace(":", "-");
         mergedFilePath += "\\" + currentTime+ ".txt";
         File file = new File(mergedFilePath);
-
 
         try{
             file.createNewFile();

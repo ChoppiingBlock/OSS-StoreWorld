@@ -1,4 +1,4 @@
-package org.spring.util;
+package org.spring.tool.ErrorTripUtil;
 
 public class ExceptionHandler {
     public static void execute(Runnable task, int code , int describe) {
