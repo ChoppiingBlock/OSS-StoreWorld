@@ -127,7 +127,7 @@ public class FileController {
     }
 
     /**
-     * 获得分片的对应服务的列表
+     * client获得分片的对应服务的列表
      *
      * @param fileId
      * @return java.lang.String

@@ -6,18 +6,21 @@
 
 需要解决的痛点：超大文件的存储 ， 作为服务的方便的中间件 ， 合理利用cpu，内存资源，智能分配任务，权限管理，树形文件管理
 
-启动服务：获得小黑框框
-todo ： 父子项目管理
-todo ： 权限类型枚举， 分片方法，文件类型枚举
 todo ： 断电重传
-todo ： 重新设计架构：合并client 和 calcul
-todo ： log
-todo ： md5
-todo ： 分块
-todo ： 网关
+
+client掉了，client重新要store文件  ， 需要shadedat。但是client不声不响掉了怎么办，client给个实例对象过来，下同。
+key是监听会掉线的serverNmae + serverId，value是接口。
+加上一个不断轮询访问这个kv的线程，实现断电重传
+
+store掉了，store重新要client文件 ， 需要path ip port ， offset ， index
+store 掉了， store重新要store文件，需要path ，storeid，shadeid
+store掉了，cal重新要store文件，需要path ，storeid，shadeid
+cal掉了，
+
+
 todo ： 归档
 todo ： 升级和降级（升级： 指把文件改为分块文件。降级：es分割保存）
 todo ： 多点传输 在多点传输中，数据一次发送到网络中的多个接收者，而不是为每个接收者单独发送数据。，每个目标点都需要建立一条独立的连接来接收数据。这种方式在面对大量接收者时会导致网络资源消耗过高。
-todo ： 多线程超大文件拼接
+todo ： 多线程超大文件拼接。针对的是大块文件，小块文件就顺序写就行
 todo ： 网络连接管理 ， 文件流连接管理（池化）
 

@@ -12,6 +12,7 @@ public class MasterApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MasterApplication.class, args);
+
     }
 
 }

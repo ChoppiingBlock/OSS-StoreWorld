@@ -2,6 +2,7 @@ package org.spring.master;
 
 import com.alibaba.fastjson.JSON;
 import org.junit.jupiter.api.Test;
+import org.spring.dto.TaskStatus;
 import org.spring.mapper.UserMapper;
 import org.spring.po.FileMetadata;
 import org.spring.tool.Impl.CodecMd5Util;
@@ -19,9 +20,7 @@ class MasterApplicationTests {
     @Test
     void contextLoads() {
 
-
-        CodecMd5Util codecMd5Util = new CodecMd5Util();
-        System.out.println(codecMd5Util.getFileMd5("C:\\05program\\bucketWorld\\files\\input\\1.mp4"));
+        System.out.println(TaskStatus.ABANDON.getStatusCode());
     }
 
 }

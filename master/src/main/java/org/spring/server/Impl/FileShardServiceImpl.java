@@ -82,7 +82,7 @@ public class FileShardServiceImpl extends ServiceImpl<FileShardMapper, FileShard
         return new ArrayList<>();
     }
 
-    private void getFeign(FileShardMapping fileShardMapping
+    public void getFeign(FileShardMapping fileShardMapping
             ,String clientFileIp
             ,String clientFilePort
             ,String clientFilePath)  {
