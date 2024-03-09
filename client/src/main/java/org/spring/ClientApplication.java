@@ -23,7 +23,7 @@ public class ClientApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ClientApplication.class, args);
-        System.out.println("hello world hello world");
+        System.out.println("hello world hello world ");
 
         // 在新线程中运行 allStream.allStream()
         ApplicationContext context = ApplicationContextProvider.getContext();
